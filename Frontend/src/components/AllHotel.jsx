@@ -3,13 +3,13 @@ import useFetch from "../useFetch";
 
 export default function AllHotel(){
     const [successMessage, setSuccessMessage] = useState("")
-    const { data, loading, error } = useFetch("http://localhost:4444/hotels")
+    const { data, loading, error } = useFetch("https://my-fullstack-app-2-6h7m.vercel.app/hotels")
 
     // console.log(data)
 
     const deleteHandler = async (hotelId) => {
         try {
-            const response = await fetch(`http://localhost:4444/hotels/${hotelId}`, 
+            const response = await fetch(`https://my-fullstack-app-2-6h7m.vercel.app/hotels/${hotelId}`, 
                 {
                     method: "DELETE"
                 }

@@ -43,7 +43,7 @@ const AddNewHotel = () => {
     }
 
         try {
-            const response = await fetch("http://localhost:4444/hotels", {
+            const response = await fetch("https://my-fullstack-app-2-6h7m.vercel.app/hotels", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

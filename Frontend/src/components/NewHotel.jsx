@@ -1,7 +1,7 @@
 import useFetch from "../useFetch";
 
 export default function NewHotel({name}) {
-    const {data, loading, error} = useFetch(`http://localhost:4444/hotels/${name}`)
+    const {data, loading, error} = useFetch(`https://my-fullstack-app-2-6h7m.vercel.app/hotels/${name}`)
 
     console.log(data)
 
