@@ -36,6 +36,10 @@ app.use(express.json())
 //   photos: ["https://example.com/hotel1-photo1.jpg", "https://example.com/hotel1-photo2.jpg"],
 // };
 
+app.get("/", async(req, res) => {
+    res.send("Backend is running!")
+})
+
 async function createHotel(newHotel) {
     try {
         const hotel = new Hotel(newHotel)
